@@ -1,7 +1,16 @@
 import React from 'react'
 
-export const Card = () => {
-  return (
-    <div>Hola, soy una tarjeta</div>
+function Card(usuario){
+
+  const usuarioArray = usuario.usuario
+
+  console.log(usuarioArray)
+
+  return(
+    <h1>bienvenido {usuarioArray.nombre} {usuarioArray.apellido}</h1>
   )
+
 }
+
+export default Card
+
